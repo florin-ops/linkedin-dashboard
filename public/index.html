@@ -99,6 +99,27 @@ tr:last-child td{border-bottom:none}
 .lp{display:none}
 .lp.act{display:block}
 
+/* Audience */
+.aud-filters{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}
+.aud-filters button{padding:7px 16px;border-radius:7px;border:1.5px solid #e5e5e3;background:#fff;cursor:pointer;font-size:12px;font-weight:500;color:#52514e;transition:all .15s}
+.aud-filters button:hover{border-color:#0a66c2;color:#0a66c2}
+.aud-filters button.act{background:#0a66c2;border-color:#0a66c2;color:#fff}
+.ap{display:none}
+.ap.act{display:block}
+.aud-note{font-size:11px;color:#8a8985;margin-bottom:14px}
+.aud-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.aud-card{background:#fff;border-radius:10px;padding:16px 18px;box-shadow:0 1px 3px rgba(0,0,0,.06);border:1px solid #f0f0ee}
+.aud-card h3{font-size:11px;text-transform:uppercase;letter-spacing:.5px;color:#8a8985;margin-bottom:10px}
+.aud-row{margin-bottom:8px}
+.aud-row:last-child{margin-bottom:0}
+.aud-row-top{display:flex;justify-content:space-between;font-size:12px;margin-bottom:3px;gap:8px}
+.aud-row-label{color:#0b0b0b;font-weight:500}
+.aud-row-pct{color:#52514e;font-variant-numeric:tabular-nums;flex-shrink:0}
+.aud-bar-bg{background:#f0f0ee;border-radius:4px;height:6px;overflow:hidden}
+.aud-bar-fill{height:100%;border-radius:4px;background:#0a66c2}
+.aud-empty{font-size:12px;color:#8a8985}
+.aud-mini{margin-top:8px;font-size:11px;color:#8a8985}
+
 .ft{max-width:1240px;margin:0 auto;padding:14px 28px 28px;font-size:10px;color:#8a8985}
 
 @media(max-width:768px){
@@ -122,6 +143,7 @@ tr:last-child td{border-bottom:none}
   <button onclick="sv('monthly',this)">Monthly</button>
   <button onclick="sv('top',this)">Top Posts</button>
   <button onclick="sv('pillars',this)">Pillars</button>
+  <button onclick="sv('audience',this)">Audience</button>
 </div>
 
 <!-- ===== TRENDS ===== -->
@@ -185,7 +207,7 @@ I&#39;ve written the full argument: why venture&#39;s version of the operator sh
 
 VC is a decade behind PE on the one lever that moves the return
 
-<a href="https://www.linkedin.com/feed/update/urn:li:activity:7482355560940687360/" target="_blank" rel="noopener">View on LinkedIn →</a></div></td></tr>
+<a href="https://www.linkedin.com/feed/update/urn:li:activity:7482355560940687360/" target="_blank" rel="noopener">View on LinkedIn →</a><div class="aud-mini">Top audience: Senior (29%) · 2-10 employees (33%) · Venture Capital and Private Equity Principals (33%)</div></div></td></tr>
 <tr class="vr"><td>2</td><td class="pt" onclick="tc('7479893813369692160')"><div class="pw"><span class="ei" id="i-7479893813369692160">+</span><span class="vb" title="Viral: >50% out-of-network">&#128293;</span>One of the portfolio companies I am working with ($6.3M revenue, SaaS) closed a...</div><span class="pl-tag" style="background:#2a78d622;color:#2a78d6">Value Creation</span></td><td class="dt">Jul 6</td><td class="n">432</td><td class="vi">48%/52%</td><td class="n">223</td><td class="n">0</td><td class="n">8</td></tr>
 <tr class="cr" id="c-7479893813369692160"><td colspan="8"><div class="cc"><div class="cl">Full post content</div>One of the portfolio companies I am working with ($6.3M revenue, SaaS) closed a funding round about 5 months ago, aiming to break into new market segments by hiring 10 new sales reps.
 
@@ -205,7 +227,7 @@ The founder wants a number. What they actually need is a sales leader or the ope
 
 Later edit: and no, I am no advocating for hiring AI Sales reps. That does not change the profitability equation, in spite of what many preach these days.
 
-<a href="https://www.linkedin.com/feed/update/urn:li:activity:7479893813369692160/" target="_blank" rel="noopener">View on LinkedIn →</a></div></td></tr>
+<a href="https://www.linkedin.com/feed/update/urn:li:activity:7479893813369692160/" target="_blank" rel="noopener">View on LinkedIn →</a><div class="aud-mini">Top audience: Senior (26%) · 2-10 employees (22%) · New York City Metropolitan Area (14%) · Technology, Information and Internet (12%) · Founder (8%)</div></div></td></tr>
 <tr class=""><td>3</td><td class="pt" onclick="tc('7484925150304481280')"><div class="pw"><span class="ei" id="i-7484925150304481280">+</span>I spent most of my operating years inside one company at a time, and from...</div><span class="pl-tag" style="background:#1baf7a22;color:#1baf7a">The Platform Case</span></td><td class="dt">Jul 20</td><td class="n">288</td><td class="">57%/43%</td><td class="n">155</td><td class="n">1</td><td class="n">4</td></tr>
 <tr class="cr" id="c-7484925150304481280"><td colspan="8"><div class="cc"><div class="cl">Full post content</div>I spent most of my operating years inside one company at a time, and from that seat you only ever see one experiment running.
 
@@ -219,7 +241,7 @@ And I will confess I did not see this from the outside. The first time I sat in 
 
 Funding a VP of Sales in each company buys you competent execution and a single data point. Funding the seat that watches them all buys pattern recognition early enough to change the outcome. One is a cost line. The other is underwriting.
 
-<a href="https://www.linkedin.com/feed/update/urn:li:activity:7484925150304481280/" target="_blank" rel="noopener">View on LinkedIn →</a></div></td></tr>
+<a href="https://www.linkedin.com/feed/update/urn:li:activity:7484925150304481280/" target="_blank" rel="noopener">View on LinkedIn →</a><div class="aud-mini">Top audience: Entry (20%) · 51-200 employees (19%) · London Area, United Kingdom (19%) · IT Services and IT Consulting (11%) · Co-Founder (4%)</div></div></td></tr>
 <tr class=""><td>4</td><td class="pt" onclick="tc('7480932709117337601')"><div class="pw"><span class="ei" id="i-7480932709117337601">+</span>I have not sat in on a VC fund review this year where operational value...</div><span class="pl-tag" style="background:#1baf7a22;color:#1baf7a">The Platform Case</span></td><td class="dt">Jul 9</td><td class="n">269</td><td class="">58%/42%</td><td class="n">108</td><td class="n">0</td><td class="n">3</td></tr>
 <tr class="cr" id="c-7480932709117337601"><td colspan="8"><div class="cc"><div class="cl">Full post content</div>I have not sat in on a VC fund review this year where operational value creation wasn&#39;t named as the lever, but naming it and building to pull it are two different things.
 
@@ -233,7 +255,7 @@ And, like it wasn&#39;t enough, the bar moved again in the past 18 months or so:
 
 PE built its version of this answer a decade ago: operating partners with real authority over the asset. VC and growth funds hold minority stakes, so control is exactly what they don&#39;t have. Copying the PE model wholesale doesn&#39;t work. The mechanism has to be different, and based on my platform experience, I have written up what that looks like. If your fund is weighing where operating capability should sit and what it should be paid, message me, and I will send it over.
 
-<a href="https://www.linkedin.com/feed/update/urn:li:activity:7480932709117337601/" target="_blank" rel="noopener">View on LinkedIn →</a></div></td></tr>
+<a href="https://www.linkedin.com/feed/update/urn:li:activity:7480932709117337601/" target="_blank" rel="noopener">View on LinkedIn →</a><div class="aud-mini">Top audience: Senior (21%) · 2-10 employees (22%) · London Area, United Kingdom (15%) · Venture Capital and Private Equity Principals (13%) · Founder (8%)</div></div></td></tr>
 <tr class=""><td>5</td><td class="pt" onclick="tc('7487476175443931136')"><div class="pw"><span class="ei" id="i-7487476175443931136">+</span>In 10 years of portfolio engagements, I have not yet seen the original set of...</div><span class="pl-tag" style="background:#1baf7a22;color:#1baf7a">The Platform Case</span></td><td class="dt">Jul 27</td><td class="n">217</td><td class="">65%/35%</td><td class="n">127</td><td class="n">0</td><td class="n">1</td></tr>
 <tr class="cr" id="c-7487476175443931136"><td colspan="8"><div class="cc"><div class="cl">Full post content</div>In 10 years of portfolio engagements, I have not yet seen the original set of assumptions survive contact with the evidence.
 
@@ -274,7 +296,7 @@ Here&#39;s the cheat sheet I used with any early-stage portfolio company I work 
 
 From persona to ICP
 
-<a href="https://www.linkedin.com/feed/update/urn:li:activity:7486012316975718400/" target="_blank" rel="noopener">View on LinkedIn →</a></div></td></tr></tbody>
+<a href="https://www.linkedin.com/feed/update/urn:li:activity:7486012316975718400/" target="_blank" rel="noopener">View on LinkedIn →</a><div class="aud-mini">Top audience: Senior (20%) · 2-10 employees (20%) · Bucharest Metropolitan Area (12%) · Technology, Information and Internet (15%) · Co-Founder (9%)</div></div></td></tr></tbody>
   </table></div>
 </div>
 </div>
@@ -624,6 +646,184 @@ From persona to ICP</div></td></tr></tbody>
   </div>
 </div>
 
+<!-- ===== AUDIENCE ===== -->
+<div class="vw" id="v-audience">
+  <div class="cs">
+    <h2>Audience</h2>
+    <p class="cd-desc">Who you're reaching, weighted by post reach. Filter by pillar to check whether that content lands with the right audience.</p>
+    <div class="aud-filters">
+      <button class="act" onclick="sa('all',this)">All</button>
+      <button onclick="sa('value-creation',this)">Value Creation</button>
+      <button onclick="sa('the-method',this)">The Method</button>
+      <button onclick="sa('the-platform-case',this)">The Platform Case</button>
+      <button onclick="sa('the-bridge',this)">The Bridge</button>
+    </div>
+    <div class="ap act" id="a-all">
+    <p class="aud-note">Reach-weighted across 5 posts with enough views for LinkedIn to disclose demographics.</p>
+    <div class="aud-grid">
+    <div class="aud-card"><h3>Seniority</h3><div class="aud-row">
+      <div class="aud-row-top"><span class="aud-row-label">Senior</span><span class="aud-row-pct">95%</span></div>
+      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:95.24248004910987%"></div></div>
+    </div>
+    <div class="aud-row">
+      <div class="aud-row-top"><span class="aud-row-label">Entry</span><span class="aud-row-pct">5%</span></div>
+      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:4.757519950890117%"></div></div>
+    </div></div>
+    <div class="aud-card"><h3>Company Size</h3><div class="aud-row">
+      <div class="aud-row-top"><span class="aud-row-label">2-10 employees</span><span class="aud-row-pct">95%</span></div>
+      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:95.24248004910987%"></div></div>
+    </div>
+    <div class="aud-row">
+      <div class="aud-row-top"><span class="aud-row-label">51-200 employees</span><span class="aud-row-pct">5%</span></div>
+      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:4.757519950890117%"></div></div>
+    </div></div>
+    <div class="aud-card"><h3>Location</h3><div class="aud-row">
+      <div class="aud-row-top"><span class="aud-row-label">London Area, United Kingdom</span><span class="aud-row-pct">48%</span></div>
+      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:47.73139745916515%"></div></div>
+    </div>
+    <div class="aud-row">
+      <div class="aud-row-top"><span class="aud-row-label">New York City Metropolitan Area</span><span class="aud-row-pct">40%</span></div>
+      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:40.471869328493646%"></div></div>
+    </div>
+    <div class="aud-row">
+      <div class="aud-row-top"><span class="aud-row-label">Bucharest Metropolitan Area</span><span class="aud-row-pct">12%</span></div>
+      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:11.796733212341199%"></div></div>
+    </div></div>
+    <div class="aud-card"><h3>Industry</h3><div class="aud-row">
+      <div class="aud-row-top"><span class="aud-row-label">Venture Capital and Private Equity Principals</span><span class="aud-row-pct">86%</span></div>
+      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:86.40270104358501%"></div></div>
+    </div>
+    <div class="aud-row">
+      <div class="aud-row-top"><span class="aud-row-label">Technology, Information and Internet</span><span class="aud-row-pct">9%</span></div>
+      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:8.83977900552486%"></div></div>
+    </div>
+    <div class="aud-row">
+      <div class="aud-row-top"><span class="aud-row-label">IT Services and IT Consulting</span><span class="aud-row-pct">5%</span></div>
+      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:4.757519950890117%"></div></div>
+    </div></div>
+    <div class="aud-card"><h3>Job Title</h3><div class="aud-row">
+      <div class="aud-row-top"><span class="aud-row-label">Founder</span><span class="aud-row-pct">60%</span></div>
+      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:60.07259528130672%"></div></div>
+    </div>
+    <div class="aud-row">
+      <div class="aud-row-top"><span class="aud-row-label">Co-Founder</span><span class="aud-row-pct">40%</span></div>
+      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:39.92740471869328%"></div></div>
+    </div></div>
+    </div>
+  </div>
+  <div class="ap" id="a-value-creation">
+    <p class="aud-note">Reach-weighted across 1 post with enough views for LinkedIn to disclose demographics in Value Creation.</p>
+    <div class="aud-grid">
+    <div class="aud-card"><h3>Seniority</h3><div class="aud-row">
+      <div class="aud-row-top"><span class="aud-row-label">Senior</span><span class="aud-row-pct">100%</span></div>
+      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:100%"></div></div>
+    </div></div>
+    <div class="aud-card"><h3>Company Size</h3><div class="aud-row">
+      <div class="aud-row-top"><span class="aud-row-label">2-10 employees</span><span class="aud-row-pct">100%</span></div>
+      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:100%"></div></div>
+    </div></div>
+    <div class="aud-card"><h3>Location</h3><div class="aud-row">
+      <div class="aud-row-top"><span class="aud-row-label">New York City Metropolitan Area</span><span class="aud-row-pct">100%</span></div>
+      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:100%"></div></div>
+    </div></div>
+    <div class="aud-card"><h3>Industry</h3><div class="aud-row">
+      <div class="aud-row-top"><span class="aud-row-label">Technology, Information and Internet</span><span class="aud-row-pct">100%</span></div>
+      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:100%"></div></div>
+    </div></div>
+    <div class="aud-card"><h3>Job Title</h3><div class="aud-row">
+      <div class="aud-row-top"><span class="aud-row-label">Founder</span><span class="aud-row-pct">100%</span></div>
+      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:100%"></div></div>
+    </div></div>
+    </div>
+  </div>
+  <div class="ap" id="a-the-method">
+    <p class="aud-note">Reach-weighted across 1 post with enough views for LinkedIn to disclose demographics in The Method.</p>
+    <div class="aud-grid">
+    <div class="aud-card"><h3>Seniority</h3><div class="aud-row">
+      <div class="aud-row-top"><span class="aud-row-label">Senior</span><span class="aud-row-pct">100%</span></div>
+      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:100%"></div></div>
+    </div></div>
+    <div class="aud-card"><h3>Company Size</h3><div class="aud-row">
+      <div class="aud-row-top"><span class="aud-row-label">2-10 employees</span><span class="aud-row-pct">100%</span></div>
+      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:100%"></div></div>
+    </div></div>
+    <div class="aud-card"><h3>Location</h3><div class="aud-row">
+      <div class="aud-row-top"><span class="aud-row-label">Bucharest Metropolitan Area</span><span class="aud-row-pct">100%</span></div>
+      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:100%"></div></div>
+    </div></div>
+    <div class="aud-card"><h3>Industry</h3><div class="aud-row">
+      <div class="aud-row-top"><span class="aud-row-label">Technology, Information and Internet</span><span class="aud-row-pct">100%</span></div>
+      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:100%"></div></div>
+    </div></div>
+    <div class="aud-card"><h3>Job Title</h3><div class="aud-row">
+      <div class="aud-row-top"><span class="aud-row-label">Co-Founder</span><span class="aud-row-pct">100%</span></div>
+      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:100%"></div></div>
+    </div></div>
+    </div>
+  </div>
+  <div class="ap" id="a-the-platform-case">
+    <p class="aud-note">Reach-weighted across 2 posts with enough views for LinkedIn to disclose demographics in The Platform Case.</p>
+    <div class="aud-grid">
+    <div class="aud-card"><h3>Seniority</h3><div class="aud-row">
+      <div class="aud-row-top"><span class="aud-row-label">Entry</span><span class="aud-row-pct">59%</span></div>
+      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:58.935361216730044%"></div></div>
+    </div>
+    <div class="aud-row">
+      <div class="aud-row-top"><span class="aud-row-label">Senior</span><span class="aud-row-pct">41%</span></div>
+      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:41.06463878326996%"></div></div>
+    </div></div>
+    <div class="aud-card"><h3>Company Size</h3><div class="aud-row">
+      <div class="aud-row-top"><span class="aud-row-label">51-200 employees</span><span class="aud-row-pct">59%</span></div>
+      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:58.935361216730044%"></div></div>
+    </div>
+    <div class="aud-row">
+      <div class="aud-row-top"><span class="aud-row-label">2-10 employees</span><span class="aud-row-pct">41%</span></div>
+      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:41.06463878326996%"></div></div>
+    </div></div>
+    <div class="aud-card"><h3>Location</h3><div class="aud-row">
+      <div class="aud-row-top"><span class="aud-row-label">London Area, United Kingdom</span><span class="aud-row-pct">100%</span></div>
+      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:100%"></div></div>
+    </div></div>
+    <div class="aud-card"><h3>Industry</h3><div class="aud-row">
+      <div class="aud-row-top"><span class="aud-row-label">IT Services and IT Consulting</span><span class="aud-row-pct">59%</span></div>
+      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:58.935361216730044%"></div></div>
+    </div>
+    <div class="aud-row">
+      <div class="aud-row-top"><span class="aud-row-label">Venture Capital and Private Equity Principals</span><span class="aud-row-pct">41%</span></div>
+      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:41.06463878326996%"></div></div>
+    </div></div>
+    <div class="aud-card"><h3>Job Title</h3><div class="aud-row">
+      <div class="aud-row-top"><span class="aud-row-label">Co-Founder</span><span class="aud-row-pct">59%</span></div>
+      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:58.935361216730044%"></div></div>
+    </div>
+    <div class="aud-row">
+      <div class="aud-row-top"><span class="aud-row-label">Founder</span><span class="aud-row-pct">41%</span></div>
+      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:41.06463878326996%"></div></div>
+    </div></div>
+    </div>
+  </div>
+  <div class="ap" id="a-the-bridge">
+    <p class="aud-note">Reach-weighted across 1 post with enough views for LinkedIn to disclose demographics in The Bridge.</p>
+    <div class="aud-grid">
+    <div class="aud-card"><h3>Seniority</h3><div class="aud-row">
+      <div class="aud-row-top"><span class="aud-row-label">Senior</span><span class="aud-row-pct">100%</span></div>
+      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:100%"></div></div>
+    </div></div>
+    <div class="aud-card"><h3>Company Size</h3><div class="aud-row">
+      <div class="aud-row-top"><span class="aud-row-label">2-10 employees</span><span class="aud-row-pct">100%</span></div>
+      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:100%"></div></div>
+    </div></div>
+    <div class="aud-card"><h3>Location</h3><div class="aud-empty">Not enough data</div></div>
+    <div class="aud-card"><h3>Industry</h3><div class="aud-row">
+      <div class="aud-row-top"><span class="aud-row-label">Venture Capital and Private Equity Principals</span><span class="aud-row-pct">100%</span></div>
+      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:100%"></div></div>
+    </div></div>
+    <div class="aud-card"><h3>Job Title</h3><div class="aud-empty">Not enough data</div></div>
+    </div>
+  </div>
+  </div>
+</div>
+
 <div class="ft">
   Data extracted from LinkedIn post analytics, Jul 2026 – Jul 2026. Impressions and other metrics are lifetime totals. In/Out % weighted by members reached at the month level. Engagement rate = total engagements ÷ total impressions. Viral = >50% out-of-network reach. Pillar tags are AI-classified at scrape time against Value Creation / The Method / The Platform Case / The Bridge — spot-check and correct in unified-posts.json if needed. Built with Claude.
 </div>
@@ -632,6 +832,7 @@ From persona to ICP</div></td></tr></tbody>
 function sv(id,b){document.querySelectorAll('.vw').forEach(v=>v.classList.remove('act'));document.querySelectorAll('.tn button').forEach(x=>x.classList.remove('act'));document.getElementById('v-'+id).classList.add('act');b.classList.add('act')}
 function sm(k,b){document.querySelectorAll('.mp').forEach(d=>d.classList.remove('act'));document.querySelectorAll('.mtb button').forEach(x=>x.classList.remove('act'));document.getElementById('m-'+k).classList.add('act');b.classList.add('act')}
 function sl(id,b){document.querySelectorAll('.lp').forEach(p=>p.classList.remove('act'));document.querySelectorAll('.lt button').forEach(x=>x.classList.remove('act'));document.getElementById(id).classList.add('act');b.classList.add('act')}
+function sa(key,b){document.querySelectorAll('.ap').forEach(p=>p.classList.remove('act'));document.querySelectorAll('.aud-filters button').forEach(x=>x.classList.remove('act'));document.getElementById('a-'+key).classList.add('act');b.classList.add('act')}
 function tc(id){var c=document.getElementById('c-'+id),i=document.getElementById('i-'+id);if(c){c.classList.toggle('op');if(i)i.textContent=c.classList.contains('op')?'\u2212':'+'}}
 
 </script>
