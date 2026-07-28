@@ -84,6 +84,23 @@ tr:last-child td{border-bottom:none}
 .na{color:#999}
 .pl-tag{display:inline-block;margin-left:22px;margin-top:2px;padding:2px 8px;border-radius:20px;font-size:10px;font-weight:600}
 
+/* Audience demographics */
+.dgt{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px}
+.dgt button{padding:6px 13px;border:1px solid #e2e2df;background:#fff;border-radius:20px;font-size:12px;cursor:pointer;color:#52514e;font-family:inherit}
+.dgt button.act{background:#0b0b0b;color:#fff;border-color:#0b0b0b}
+.dgp{display:none}
+.dgp.act{display:block}
+.dgmeta{font-size:11px;color:#8a8985;margin-bottom:14px}
+.dggrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));gap:14px}
+.dgcol{background:#fff;border-radius:9px;padding:16px 18px;box-shadow:0 1px 3px rgba(0,0,0,.06);border:1px solid #f0f0ee}
+.dgcol h3{font-size:12px;text-transform:uppercase;letter-spacing:.5px;color:#8a8985;margin-bottom:12px;font-weight:600}
+.dgr{display:flex;align-items:center;gap:9px;margin-bottom:8px}
+.dgl{flex:0 0 46%;font-size:11.5px;color:#52514e;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.dgb{flex:1;height:14px;background:#f2f2f0;border-radius:3px;overflow:hidden}
+.dgf{height:100%;border-radius:3px}
+.dgv{flex:0 0 42px;text-align:right;font-size:11.5px;font-weight:600;font-variant-numeric:tabular-nums}
+.dgna{font-size:12px;color:#8a8985;font-style:italic}
+
 /* Pillar cards */
 .pcg{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:18px}
 .pcd{background:#fff;border-radius:9px;padding:14px 16px;box-shadow:0 1px 3px rgba(0,0,0,.06);border:1px solid #f0f0ee;border-top:3px solid var(--pc)}
@@ -98,27 +115,6 @@ tr:last-child td{border-bottom:none}
 .lt button.act{background:#0a66c2;border-color:#0a66c2;color:#fff}
 .lp{display:none}
 .lp.act{display:block}
-
-/* Audience */
-.aud-filters{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}
-.aud-filters button{padding:7px 16px;border-radius:7px;border:1.5px solid #e5e5e3;background:#fff;cursor:pointer;font-size:12px;font-weight:500;color:#52514e;transition:all .15s}
-.aud-filters button:hover{border-color:#0a66c2;color:#0a66c2}
-.aud-filters button.act{background:#0a66c2;border-color:#0a66c2;color:#fff}
-.ap{display:none}
-.ap.act{display:block}
-.aud-note{font-size:11px;color:#8a8985;margin-bottom:14px}
-.aud-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
-.aud-card{background:#fff;border-radius:10px;padding:16px 18px;box-shadow:0 1px 3px rgba(0,0,0,.06);border:1px solid #f0f0ee}
-.aud-card h3{font-size:11px;text-transform:uppercase;letter-spacing:.5px;color:#8a8985;margin-bottom:10px}
-.aud-row{margin-bottom:8px}
-.aud-row:last-child{margin-bottom:0}
-.aud-row-top{display:flex;justify-content:space-between;font-size:12px;margin-bottom:3px;gap:8px}
-.aud-row-label{color:#0b0b0b;font-weight:500}
-.aud-row-pct{color:#52514e;font-variant-numeric:tabular-nums;flex-shrink:0}
-.aud-bar-bg{background:#f0f0ee;border-radius:4px;height:6px;overflow:hidden}
-.aud-bar-fill{height:100%;border-radius:4px;background:#0a66c2}
-.aud-empty{font-size:12px;color:#8a8985}
-.aud-mini{margin-top:8px;font-size:11px;color:#8a8985}
 
 .ft{max-width:1240px;margin:0 auto;padding:14px 28px 28px;font-size:10px;color:#8a8985}
 
@@ -402,17 +398,17 @@ The governance structure you create decides which one you get.
 <div class="mp" id="m-2026-07">
   <div class="sc">
     <div class="cd"><div class="lb">Posts</div><div class="vl">6</div></div>
-    <div class="cd"><div class="lb">Avg Impressions</div><div class="vl">837</div><div class="sb">per post</div></div>
-    <div class="cd"><div class="lb">Avg Reached</div><div class="vl">564</div><div class="sb">members per post</div></div>
+    <div class="cd"><div class="lb">Avg Impressions</div><div class="vl">839</div><div class="sb">per post</div></div>
+    <div class="cd"><div class="lb">Avg Reached</div><div class="vl">652</div><div class="sb">members per post</div></div>
     <div class="cd"><div class="lb">Avg Engagements</div><div class="vl">5</div><div class="sb">per post</div></div>
     <div class="cd"><div class="lb">Followers Gained</div><div class="vl">1</div><div class="sb">total</div></div>
-    <div class="cd"><div class="lb">In / Out Network</div><div class="vl">20% / 80%</div><div class="sb">weighted by reach</div></div>
+    <div class="cd"><div class="lb">In / Out Network</div><div class="vl">19% / 81%</div><div class="sb">weighted by reach</div></div>
     <div class="cd"><div class="lb">Engagement Rate</div><div class="vl">0.6%</div><div class="sb">eng ÷ impressions</div></div>
     <div class="cd cv"><div class="lb">Viral Posts</div><div class="vl">2 &#128293;</div><div class="sb">&gt;50% out-of-network</div></div>
   </div>
   <div class="tw"><table>
     <thead><tr><th>#</th><th>Post</th><th>Date</th><th class="n">Impr.</th><th>In/Out</th><th class="n">Reached</th><th class="n">Fol.</th><th class="n">Eng.</th></tr></thead>
-    <tbody><tr class="vr"><td>1</td><td class="pt" onclick="tc('7482355560940687360')"><div class="pw"><span class="ei" id="i-7482355560940687360">+</span><span class="vb" title="Viral: >50% out-of-network">&#128293;</span>I have spent years as the operator a fund that calls when a portfolio company&#39;s...</div><span class="pl-tag" style="background:#eda10022;color:#eda100">The Bridge</span></td><td class="dt">Jul 13</td><td class="n">3,676</td><td class="vi">11%/89%</td><td class="n">2,707</td><td class="n">0</td><td class="n">14</td></tr>
+    <tbody><tr class="vr"><td>1</td><td class="pt" onclick="tc('7482355560940687360')"><div class="pw"><span class="ei" id="i-7482355560940687360">+</span><span class="vb" title="Viral: >50% out-of-network">&#128293;</span>I have spent years as the operator a fund that calls when a portfolio company&#39;s...</div><span class="pl-tag" style="background:#eda10022;color:#eda100">The Bridge</span></td><td class="dt">Jul 13</td><td class="n">3,677</td><td class="vi">11%/89%</td><td class="n">2,707</td><td class="n">0</td><td class="n">14</td></tr>
 <tr class="cr" id="c-7482355560940687360"><td colspan="8"><div class="cc"><div class="cl">Full post content</div>I have spent years as the operator a fund that calls when a portfolio company&#39;s commercial engine stalls, which makes the next part awkward, because I have come to think the model I am part of is quietly broken.
 
 In S&amp;P Global&#39;s 2026 survey, 71% of GPs now say they prioritise operational value creation over financial engineering. The returns that used to come from multiple expansion and cheap leverage (roughly 59% of buyout returns for over a decade, per McKinsey) are gone, and everyone in the room knows it.
@@ -425,10 +421,8 @@ This type of help does not compound for the fund.
 
 I&#39;ve written the full argument: why venture&#39;s version of the operator shortage gets solved at the fund level, not hiring help for portfolio companies one at a time, and why the minority-stake objection doesn&#39;t hold.
 
-VC is a decade behind PE on the one lever that moves the return
-
-<a href="https://www.linkedin.com/feed/update/urn:li:activity:7482355560940687360/" target="_blank" rel="noopener">View on LinkedIn →</a><div class="aud-mini">Top audience: Senior (29%) · 2-10 employees (33%) · Venture Capital and Private Equity Principals (33%)</div></div></td></tr>
-<tr class="vr"><td>2</td><td class="pt" onclick="tc('7479893813369692160')"><div class="pw"><span class="ei" id="i-7479893813369692160">+</span><span class="vb" title="Viral: >50% out-of-network">&#128293;</span>One of the portfolio companies I am working with ($6.3M revenue, SaaS) closed a...</div><span class="pl-tag" style="background:#2a78d622;color:#2a78d6">Value Creation</span></td><td class="dt">Jul 6</td><td class="n">432</td><td class="vi">48%/52%</td><td class="n">223</td><td class="n">0</td><td class="n">8</td></tr>
+<a href="https://www.linkedin.com/feed/update/urn:li:activity:7482355560940687360/" target="_blank" rel="noopener">View on LinkedIn →</a></div></td></tr>
+<tr class="vr"><td>2</td><td class="pt" onclick="tc('7479893813369692160')"><div class="pw"><span class="ei" id="i-7479893813369692160">+</span><span class="vb" title="Viral: >50% out-of-network">&#128293;</span>One of the portfolio companies I am working with ($6.3M revenue, SaaS) closed a...</div><span class="pl-tag" style="background:#2a78d622;color:#2a78d6">Value Creation</span></td><td class="dt">Jul 6</td><td class="n">434</td><td class="vi">48%/52%</td><td class="n">223</td><td class="n">0</td><td class="n">8</td></tr>
 <tr class="cr" id="c-7479893813369692160"><td colspan="8"><div class="cc"><div class="cl">Full post content</div>One of the portfolio companies I am working with ($6.3M revenue, SaaS) closed a funding round about 5 months ago, aiming to break into new market segments by hiring 10 new sales reps.
 
 5 months in, they&#39;ve only found 4 great ones. What would you do? Would you hire the other 6 mediocre ones?
@@ -461,8 +455,8 @@ And I will confess I did not see this from the outside. The first time I sat in 
 
 Funding a VP of Sales in each company buys you competent execution and a single data point. Funding the seat that watches them all buys pattern recognition early enough to change the outcome. One is a cost line. The other is underwriting.
 
-<a href="https://www.linkedin.com/feed/update/urn:li:activity:7484925150304481280/" target="_blank" rel="noopener">View on LinkedIn →</a><div class="aud-mini">Top audience: Entry (20%) · 51-200 employees (19%) · London Area, United Kingdom (19%) · IT Services and IT Consulting (11%) · Co-Founder (4%)</div></div></td></tr>
-<tr class=""><td>4</td><td class="pt" onclick="tc('7480932709117337601')"><div class="pw"><span class="ei" id="i-7480932709117337601">+</span>I have not sat in on a VC fund review this year where operational value...</div><span class="pl-tag" style="background:#1baf7a22;color:#1baf7a">The Platform Case</span></td><td class="dt">Jul 9</td><td class="n">269</td><td class="">58%/42%</td><td class="n">108</td><td class="n">0</td><td class="n">3</td></tr>
+<a href="https://www.linkedin.com/feed/update/urn:li:activity:7484925150304481280/" target="_blank" rel="noopener">View on LinkedIn →</a></div></td></tr>
+<tr class=""><td>4</td><td class="pt" onclick="tc('7480932709117337601')"><div class="pw"><span class="ei" id="i-7480932709117337601">+</span>I have not sat in on a VC fund review this year where operational value creation...</div><span class="pl-tag" style="background:#1baf7a22;color:#1baf7a">The Platform Case</span></td><td class="dt">Jul 9</td><td class="n">270</td><td class="">58%/42%</td><td class="n">108</td><td class="n">0</td><td class="n">3</td></tr>
 <tr class="cr" id="c-7480932709117337601"><td colspan="8"><div class="cc"><div class="cl">Full post content</div>I have not sat in on a VC fund review this year where operational value creation wasn&#39;t named as the lever, but naming it and building to pull it are two different things.
 
 The deal math made the shift for everyone: a 2015 buyout, half funded on cheap debt, riding a rising multiple, needed about 5% annual EBITDA growth to clear 2.5x over a five-year hold. Today, with more expensive debt and a multiple that has stopped climbing, the same return requires closer to 10-12% earnings growth per year. For deals underwritten between 2010 and 2022, cheap debt and multiple expansion did roughly 59% of the work, so that tailwind is priced out.
@@ -475,8 +469,8 @@ And, like it wasn&#39;t enough, the bar moved again in the past 18 months or so:
 
 PE built its version of this answer a decade ago: operating partners with real authority over the asset. VC and growth funds hold minority stakes, so control is exactly what they don&#39;t have. Copying the PE model wholesale doesn&#39;t work. The mechanism has to be different, and based on my platform experience, I have written up what that looks like. If your fund is weighing where operating capability should sit and what it should be paid, message me, and I will send it over.
 
-<a href="https://www.linkedin.com/feed/update/urn:li:activity:7480932709117337601/" target="_blank" rel="noopener">View on LinkedIn →</a><div class="aud-mini">Top audience: Senior (21%) · 2-10 employees (22%) · London Area, United Kingdom (15%) · Venture Capital and Private Equity Principals (13%) · Founder (8%)</div></div></td></tr>
-<tr class=""><td>5</td><td class="pt" onclick="tc('7487476175443931136')"><div class="pw"><span class="ei" id="i-7487476175443931136">+</span>In 10 years of portfolio engagements, I have not yet seen the original set of...</div><span class="pl-tag" style="background:#1baf7a22;color:#1baf7a">The Platform Case</span></td><td class="dt">Jul 27</td><td class="n">217</td><td class="">65%/35%</td><td class="n">127</td><td class="n">0</td><td class="n">1</td></tr>
+<a href="https://www.linkedin.com/feed/update/urn:li:activity:7480932709117337601/" target="_blank" rel="noopener">View on LinkedIn →</a></div></td></tr>
+<tr class=""><td>5</td><td class="pt" onclick="tc('7487476175443931136')"><div class="pw"><span class="ei" id="i-7487476175443931136">+</span>In 10 years of portfolio engagements, I have not yet seen the original set of...</div><span class="pl-tag" style="background:#eb683422;color:#eb6834">The Method</span></td><td class="dt">Jul 27</td><td class="n">222</td><td class="">—</td><td class="n">—</td><td class="n">0</td><td class="n">1</td></tr>
 <tr class="cr" id="c-7487476175443931136"><td colspan="8"><div class="cc"><div class="cl">Full post content</div>In 10 years of portfolio engagements, I have not yet seen the original set of assumptions survive contact with the evidence.
 
 Every stalled company arrives with one already written. More reps. A new commercial leader. A pricing change. The prescription seems to be written months before anyone runs a diagnosis, and the capital behind it gets deployed against a framing nobody has tested. Usually the founder&#39;s own framing, which is the framing that produced the stall.
@@ -486,8 +480,6 @@ What I usually do instead is unremarkable on paper: diagnose, review, act. What 
 One company&#39;s diagnosis is an engagement. The same arc across ten companies is an instrument.
 
 The full argument is in the article below, including a worked case: £11.2M raised, burn at twice budget, and a board arguing about the wrong company. If the portfolio-wide version of this read is a live question at your end, my DMs are open.
-
-The plan was written before anyone looked
 
 <a href="https://www.linkedin.com/feed/update/urn:li:activity:7487476175443931136/" target="_blank" rel="noopener">View on LinkedIn →</a></div></td></tr>
 <tr class=""><td>6</td><td class="pt" onclick="tc('7486012316975718400')"><div class="pw"><span class="ei" id="i-7486012316975718400">+</span>&quot;Our ICP is defined.&quot;
@@ -516,9 +508,7 @@ So before you rebuild the product, check that you are not selling the right pain
 
 Here&#39;s the cheat sheet I used with any early-stage portfolio company I work with. Hope it helps someone.
 
-From persona to ICP
-
-<a href="https://www.linkedin.com/feed/update/urn:li:activity:7486012316975718400/" target="_blank" rel="noopener">View on LinkedIn →</a><div class="aud-mini">Top audience: Senior (20%) · 2-10 employees (20%) · Bucharest Metropolitan Area (12%) · Technology, Information and Internet (15%) · Co-Founder (9%)</div></div></td></tr></tbody>
+<a href="https://www.linkedin.com/feed/update/urn:li:activity:7486012316975718400/" target="_blank" rel="noopener">View on LinkedIn →</a></div></td></tr></tbody>
   </table></div>
 </div>
 </div>
@@ -535,7 +525,7 @@ From persona to ICP
     </div>
     <div class="lp act" id="li"><div class="tw"><table>
       <thead><tr><th>#</th><th>Post</th><th>Month</th><th class="n">Impressions</th></tr></thead>
-      <tbody><tr class="vr"><td>1</td><td class="pt" onclick="tc('t-7482355560940687360')"><div class="pw"><span class="ei" id="i-t-7482355560940687360">+</span><span class="vb">&#128293;</span>I have spent years as the operator a fund that calls when a portfolio company&#39;s...</div><span class="pl-tag" style="background:#eda10022;color:#eda100">The Bridge</span></td><td class="dt">Jul 26</td><td class="n">3,676</td></tr>
+      <tbody><tr class="vr"><td>1</td><td class="pt" onclick="tc('t-7482355560940687360')"><div class="pw"><span class="ei" id="i-t-7482355560940687360">+</span><span class="vb">&#128293;</span>I have spent years as the operator a fund that calls when a portfolio company&#39;s...</div><span class="pl-tag" style="background:#eda10022;color:#eda100">The Bridge</span></td><td class="dt">Jul 26</td><td class="n">3,677</td></tr>
 <tr class="cr" id="c-t-7482355560940687360"><td colspan="4"><div class="cc"><div class="cl">Full post content</div>I have spent years as the operator a fund that calls when a portfolio company&#39;s commercial engine stalls, which makes the next part awkward, because I have come to think the model I am part of is quietly broken.
 
 In S&amp;P Global&#39;s 2026 survey, 71% of GPs now say they prioritise operational value creation over financial engineering. The returns that used to come from multiple expansion and cheap leverage (roughly 59% of buyout returns for over a decade, per McKinsey) are gone, and everyone in the room knows it.
@@ -546,10 +536,8 @@ VCs have the same shortage, but they just haven&#39;t named it yet. I am sure yo
 
 This type of help does not compound for the fund.
 
-I&#39;ve written the full argument: why venture&#39;s version of the operator shortage gets solved at the fund level, not hiring help for portfolio companies one at a time, and why the minority-stake objection doesn&#39;t hold.
-
-VC is a decade behind PE on the one lever that moves the return</div></td></tr>
-<tr class="vr"><td>2</td><td class="pt" onclick="tc('t-7479893813369692160')"><div class="pw"><span class="ei" id="i-t-7479893813369692160">+</span><span class="vb">&#128293;</span>One of the portfolio companies I am working with ($6.3M revenue, SaaS) closed a...</div><span class="pl-tag" style="background:#2a78d622;color:#2a78d6">Value Creation</span></td><td class="dt">Jul 26</td><td class="n">432</td></tr>
+I&#39;ve written the full argument: why venture&#39;s version of the operator shortage gets solved at the fund level, not hiring help for portfolio companies one at a time, and why the minority-stake objection doesn&#39;t hold.</div></td></tr>
+<tr class="vr"><td>2</td><td class="pt" onclick="tc('t-7479893813369692160')"><div class="pw"><span class="ei" id="i-t-7479893813369692160">+</span><span class="vb">&#128293;</span>One of the portfolio companies I am working with ($6.3M revenue, SaaS) closed a...</div><span class="pl-tag" style="background:#2a78d622;color:#2a78d6">Value Creation</span></td><td class="dt">Jul 26</td><td class="n">434</td></tr>
 <tr class="cr" id="c-t-7479893813369692160"><td colspan="4"><div class="cc"><div class="cl">Full post content</div>One of the portfolio companies I am working with ($6.3M revenue, SaaS) closed a funding round about 5 months ago, aiming to break into new market segments by hiring 10 new sales reps.
 
 5 months in, they&#39;ve only found 4 great ones. What would you do? Would you hire the other 6 mediocre ones?
@@ -653,7 +641,9 @@ What I usually do instead is unremarkable on paper: diagnose, review, act. What 
 
 One company&#39;s diagnosis is an engagement. The same arc across ten companies is an instrument.
 
-The full argument is in the article below, including a worked case: £11.2M raised, burn at twice budget, and a board arguing about the wrong company. If the portfolio-wide version of this read is a live question at your end, my DMs are open.
+The full argument is in the article below, including a worked case: £11.2M raised, burn at twice budget, and a board arguing about the wrong company. If the portfolio-wide version of this read is a live question at your end, my DMs are open.</div></td></tr>
+<tr class=""><td>8</td><td class="pt" onclick="tc('t-7473740248276172801')"><div class="pw"><span class="ei" id="i-t-7473740248276172801">+</span>I&#39;ve had several conversations this week with VC and PE partners, and value...</div><span class="pl-tag" style="background:#1baf7a22;color:#1baf7a">The Platform Case</span></td><td class="dt">Jun 26</td><td class="n">192</td></tr>
+<tr class="cr" id="c-t-7473740248276172801"><td colspan="4"><div class="cc"><div class="cl">Full post content</div>I&#39;ve had several conversations this week with VC and PE partners, and value creation kept coming up. My view that GTM and sales acceleration are the primary active return levers received mixed reactions: in PE, accepted reality, but in VC, still slightly heretical.
 
 The plan was written before anyone looked</div></td></tr>
 <tr class=""><td>9</td><td class="pt" onclick="tc('t-7473740248276172801')"><div class="pw"><span class="ei" id="i-t-7473740248276172801">+</span>I&#39;ve had several conversations this week with VC and PE partners, and value...</div><span class="pl-tag" style="background:#eda10022;color:#eda100">The Bridge</span></td><td class="dt">Jun 26</td><td class="n">193</td></tr>
@@ -696,9 +686,7 @@ VCs have the same shortage, but they just haven&#39;t named it yet. I am sure yo
 
 This type of help does not compound for the fund.
 
-I&#39;ve written the full argument: why venture&#39;s version of the operator shortage gets solved at the fund level, not hiring help for portfolio companies one at a time, and why the minority-stake objection doesn&#39;t hold.
-
-VC is a decade behind PE on the one lever that moves the return</div></td></tr>
+I&#39;ve written the full argument: why venture&#39;s version of the operator shortage gets solved at the fund level, not hiring help for portfolio companies one at a time, and why the minority-stake objection doesn&#39;t hold.</div></td></tr>
 <tr class="vr"><td>2</td><td class="pt" onclick="tc('t-7479893813369692160')"><div class="pw"><span class="ei" id="i-t-7479893813369692160">+</span><span class="vb">&#128293;</span>One of the portfolio companies I am working with ($6.3M revenue, SaaS) closed a...</div><span class="pl-tag" style="background:#2a78d622;color:#2a78d6">Value Creation</span></td><td class="dt">Jul 26</td><td class="n">8</td></tr>
 <tr class="cr" id="c-t-7479893813369692160"><td colspan="4"><div class="cc"><div class="cl">Full post content</div>One of the portfolio companies I am working with ($6.3M revenue, SaaS) closed a funding round about 5 months ago, aiming to break into new market segments by hiring 10 new sales reps.
 
@@ -892,10 +880,14 @@ VCs have the same shortage, but they just haven&#39;t named it yet. I am sure yo
 
 This type of help does not compound for the fund.
 
-I&#39;ve written the full argument: why venture&#39;s version of the operator shortage gets solved at the fund level, not hiring help for portfolio companies one at a time, and why the minority-stake objection doesn&#39;t hold.
+I&#39;ve written the full argument: why venture&#39;s version of the operator shortage gets solved at the fund level, not hiring help for portfolio companies one at a time, and why the minority-stake objection doesn&#39;t hold.</div></td></tr>
+<tr class="vr"><td>2</td><td class="pt" onclick="tc('t-7476129635068444672')"><div class="pw"><span class="ei" id="i-t-7476129635068444672">+</span><span class="vb">&#128293;</span>A few things I found interesting shared by people who have attended SuperReturn...</div><span class="pl-tag" style="background:#1baf7a22;color:#1baf7a">The Platform Case</span></td><td class="dt">Jun 26</td><td class="n">64%</td></tr>
+<tr class="cr" id="c-t-7476129635068444672"><td colspan="4"><div class="cc"><div class="cl">Full post content</div>A few things I found interesting shared by people who have attended @SuperReturn International earlier this month in Berlin. Cherry picking, as usual, but worth considering for any operating partner concerned with value creation through sales &amp; sales acceleration across PE portfolio companies:
 
-VC is a decade behind PE on the one lever that moves the return</div></td></tr>
-<tr class="vr"><td>2</td><td class="pt" onclick="tc('t-7479893813369692160')"><div class="pw"><span class="ei" id="i-t-7479893813369692160">+</span><span class="vb">&#128293;</span>One of the portfolio companies I am working with ($6.3M revenue, SaaS) closed a...</div><span class="pl-tag" style="background:#2a78d622;color:#2a78d6">Value Creation</span></td><td class="dt">Jul 26</td><td class="n">52%</td></tr>
+&quot;With cheap leverage and multiple expansion no longer doing the heavy lifting, operational *value creation has become the core lever for generating returns*. But: genuine operating talent has to be senior, embedded in investment decisions and paid like partners.&quot;
+
+&quot;Artificial intelligence graduated to operating infrastructure. The discussion centred on four practical domains: *operational efficiency inside portfolio companies, sales enablement*, code generation and investment research. The repeated warning was that AI is now a source of durable differentiation rather than a passing theme, and that firms which fail to build genuine internal capability risk being left behind.&quot;</div></td></tr>
+<tr class="vr"><td>3</td><td class="pt" onclick="tc('t-7479893813369692160')"><div class="pw"><span class="ei" id="i-t-7479893813369692160">+</span><span class="vb">&#128293;</span>One of the portfolio companies I am working with ($6.3M revenue, SaaS) closed a...</div><span class="pl-tag" style="background:#2a78d622;color:#2a78d6">Value Creation</span></td><td class="dt">Jul 26</td><td class="n">52%</td></tr>
 <tr class="cr" id="c-t-7479893813369692160"><td colspan="4"><div class="cc"><div class="cl">Full post content</div>One of the portfolio companies I am working with ($6.3M revenue, SaaS) closed a funding round about 5 months ago, aiming to break into new market segments by hiring 10 new sales reps.
 
 5 months in, they&#39;ve only found 4 great ones. What would you do? Would you hire the other 6 mediocre ones?
@@ -925,7 +917,7 @@ That is where the fund maths hurts. A mis-timed senior GTM hire is not a single 
 And I will confess I did not see this from the outside. The first time I sat in this pattern I was inside one of the companies, and I read it as our problem and our bad hire. It took a second and a third company, from a different seat, to realise I had been misreading a structural pattern as a local accident.
 
 Funding a VP of Sales in each company buys you competent execution and a single data point. Funding the seat that watches them all buys pattern recognition early enough to change the outcome. One is a cost line. The other is underwriting.</div></td></tr>
-<tr class=""><td>4</td><td class="pt" onclick="tc('t-7480932709117337601')"><div class="pw"><span class="ei" id="i-t-7480932709117337601">+</span>I have not sat in on a VC fund review this year where operational value...</div><span class="pl-tag" style="background:#1baf7a22;color:#1baf7a">The Platform Case</span></td><td class="dt">Jul 26</td><td class="n">42%</td></tr>
+<tr class=""><td>5</td><td class="pt" onclick="tc('t-7480932709117337601')"><div class="pw"><span class="ei" id="i-t-7480932709117337601">+</span>I have not sat in on a VC fund review this year where operational value creation...</div><span class="pl-tag" style="background:#1baf7a22;color:#1baf7a">The Platform Case</span></td><td class="dt">Jul 26</td><td class="n">42%</td></tr>
 <tr class="cr" id="c-t-7480932709117337601"><td colspan="4"><div class="cc"><div class="cl">Full post content</div>I have not sat in on a VC fund review this year where operational value creation wasn&#39;t named as the lever, but naming it and building to pull it are two different things.
 
 The deal math made the shift for everyone: a 2015 buyout, half funded on cheap debt, riding a rising multiple, needed about 5% annual EBITDA growth to clear 2.5x over a five-year hold. Today, with more expensive debt and a multiple that has stopped climbing, the same return requires closer to 10-12% earnings growth per year. For deals underwritten between 2010 and 2022, cheap debt and multiple expansion did roughly 59% of the work, so that tailwind is priced out.
@@ -937,16 +929,16 @@ Ok, nowadays most funds agree it is a lever, but still resource it like overhead
 And, like it wasn&#39;t enough, the bar moved again in the past 18 months or so: AI stopped being a theme and became operating infrastructure: inside portfolio companies, in go-to-market, in code, in how deals get researched. A fund treating it as a slide is already behind the one building the capability in-house.
 
 PE built its version of this answer a decade ago: operating partners with real authority over the asset. VC and growth funds hold minority stakes, so control is exactly what they don&#39;t have. Copying the PE model wholesale doesn&#39;t work. The mechanism has to be different, and based on my platform experience, I have written up what that looks like. If your fund is weighing where operating capability should sit and what it should be paid, message me, and I will send it over.</div></td></tr>
-<tr class=""><td>5</td><td class="pt" onclick="tc('t-7487476175443931136')"><div class="pw"><span class="ei" id="i-t-7487476175443931136">+</span>In 10 years of portfolio engagements, I have not yet seen the original set of...</div><span class="pl-tag" style="background:#1baf7a22;color:#1baf7a">The Platform Case</span></td><td class="dt">Jul 26</td><td class="n">35%</td></tr>
-<tr class="cr" id="c-t-7487476175443931136"><td colspan="4"><div class="cc"><div class="cl">Full post content</div>In 10 years of portfolio engagements, I have not yet seen the original set of assumptions survive contact with the evidence.
+<tr class=""><td>6</td><td class="pt" onclick="tc('t-7473740248276172801')"><div class="pw"><span class="ei" id="i-t-7473740248276172801">+</span>I&#39;ve had several conversations this week with VC and PE partners, and value...</div><span class="pl-tag" style="background:#1baf7a22;color:#1baf7a">The Platform Case</span></td><td class="dt">Jun 26</td><td class="n">37%</td></tr>
+<tr class="cr" id="c-t-7473740248276172801"><td colspan="4"><div class="cc"><div class="cl">Full post content</div>I&#39;ve had several conversations this week with VC and PE partners, and value creation kept coming up. My view that GTM and sales acceleration are the primary active return levers received mixed reactions: in PE, accepted reality, but in VC, still slightly heretical.
 
-Every stalled company arrives with one already written. More reps. A new commercial leader. A pricing change. The prescription seems to be written months before anyone runs a diagnosis, and the capital behind it gets deployed against a framing nobody has tested. Usually the founder&#39;s own framing, which is the framing that produced the stall.
+The PE logic is clean: you buy the company, the clock starts, and over a 3-4 year hold, you have a finite set of levers you can actually pull. You&#39;re not re-architecting the product. You&#39;re not waiting for the market to mature. What you can move in the time you have is the commercial engine: pricing, motion, win rates, revenue per rep. Operating partners like me live there because that&#39;s where the return is.
 
-What I usually do instead is unremarkable on paper: diagnose, review, act. What is different is how rarely it runs in that order, and what happens to portfolio outcomes when it does. Run it once, and you have fixed one company. Run it the same way across the book and commercial health becomes something a fund can actually read, before the board deck says so.
+VC reflexes run the other way: product and market first, find fit, and the rest follows. GTM gets treated as downstream of PMF, a VP Sales you bring in eighteen months later. Fine at pre-see, of course, but it is expensive at (scaling up) seed and Series A, when growth stalls and the board reaches for the only two explanations the reflex allows: the product needs more, or we need more reps.
 
-One company&#39;s diagnosis is an engagement. The same arc across ten companies is an instrument.
+Neither is right, in my experience.
 
-The full argument is in the article below, including a worked case: £11.2M raised, burn at twice budget, and a board arguing about the wrong company. If the portfolio-wide version of this read is a live question at your end, my DMs are open.
+Go through the last twenty closed-lost deals, and what you find is almost always architecture, or the lack of it. The motion that closed the first ten customers ran on the founder being in the room, and, of course, nobody wrote it down. So every rep now sells it differently, and the pipeline reflects optimism rather than evidence. The product was rarely the problem. The motion was never built.
 
 The plan was written before anyone looked</div></td></tr>
 <tr class=""><td>6</td><td class="pt" onclick="tc('t-7486012316975718400')"><div class="pw"><span class="ei" id="i-t-7486012316975718400">+</span>&quot;Our ICP is defined.&quot;
@@ -975,7 +967,9 @@ So before you rebuild the product, check that you are not selling the right pain
 
 Here&#39;s the cheat sheet I used with any early-stage portfolio company I work with. Hope it helps someone.
 
-From persona to ICP</div></td></tr></tbody>
+&quot;No foreign national&quot; says the US Directive, and weather you like it or not, this is how the US will secure an unfair advance over the rest of the world.
+
+(reshare of Mike Butcher on the US export control directive suspending foreign-national access to frontier AI models, and the AI sovereignty debate)</div></td></tr></tbody>
     </table></div></div>
   </div>
 </div>
@@ -1025,7 +1019,7 @@ From persona to ICP</div></td></tr></tbody>
   <div class="cs">
     <h2>Out-of-Network Reach</h2>
     <p class="cd-desc">Which pillar breaks out of your existing followers and reaches new people</p>
-    <div class="cc-wrap"><svg viewBox="0 0 780 260" class="chart-svg"><line x1="70" y1="220" x2="720" y2="220" stroke="#eee" stroke-width="1"/><text x="62" y="224" text-anchor="end" fill="#8a8985" font-size="11">0%</text><line x1="70" y1="172.5" x2="720" y2="172.5" stroke="#eee" stroke-width="1"/><text x="62" y="176.5" text-anchor="end" fill="#8a8985" font-size="11">50%</text><line x1="70" y1="125" x2="720" y2="125" stroke="#eee" stroke-width="1"/><text x="62" y="129" text-anchor="end" fill="#8a8985" font-size="11">100%</text><line x1="70" y1="77.5" x2="720" y2="77.5" stroke="#eee" stroke-width="1"/><text x="62" y="81.5" text-anchor="end" fill="#8a8985" font-size="11">150%</text><line x1="70" y1="30" x2="720" y2="30" stroke="#eee" stroke-width="1"/><text x="62" y="34" text-anchor="end" fill="#8a8985" font-size="11">200%</text><rect x="106.25" y="170.6" width="90" height="49.4" rx="5" fill="#2a78d6"/><text x="151.25" y="162.6" text-anchor="middle" fill="#52514e" font-size="12" font-weight="600">52%</text><text x="151.25" y="252" text-anchor="middle" fill="#8a8985" font-size="11">Value Creation</text><rect x="268.75" y="201" width="90" height="19" rx="5" fill="#eb6834"/><text x="313.75" y="193" text-anchor="middle" fill="#52514e" font-size="12" font-weight="600">20%</text><text x="313.75" y="252" text-anchor="middle" fill="#8a8985" font-size="11">The Method</text><rect x="431.25" y="182" width="90" height="38" rx="5" fill="#1baf7a"/><text x="476.25" y="174" text-anchor="middle" fill="#52514e" font-size="12" font-weight="600">40%</text><text x="476.25" y="252" text-anchor="middle" fill="#8a8985" font-size="11">The Platform Case</text><rect x="593.75" y="135.45" width="90" height="84.55" rx="5" fill="#eda100"/><text x="638.75" y="127.44999999999999" text-anchor="middle" fill="#52514e" font-size="12" font-weight="600">89%</text><text x="638.75" y="252" text-anchor="middle" fill="#8a8985" font-size="11">The Bridge</text></svg></div>
+    <div class="cc-wrap"><svg viewBox="0 0 780 260" class="chart-svg"><line x1="70" y1="220" x2="720" y2="220" stroke="#eee" stroke-width="1"/><text x="62" y="224" text-anchor="end" fill="#8a8985" font-size="11">0%</text><line x1="70" y1="172.5" x2="720" y2="172.5" stroke="#eee" stroke-width="1"/><text x="62" y="176.5" text-anchor="end" fill="#8a8985" font-size="11">50%</text><line x1="70" y1="125" x2="720" y2="125" stroke="#eee" stroke-width="1"/><text x="62" y="129" text-anchor="end" fill="#8a8985" font-size="11">100%</text><line x1="70" y1="77.5" x2="720" y2="77.5" stroke="#eee" stroke-width="1"/><text x="62" y="81.5" text-anchor="end" fill="#8a8985" font-size="11">150%</text><line x1="70" y1="30" x2="720" y2="30" stroke="#eee" stroke-width="1"/><text x="62" y="34" text-anchor="end" fill="#8a8985" font-size="11">200%</text><rect x="90" y="177.25" width="90" height="42.75" rx="5" fill="#2a78d6"/><text x="135" y="169.25" text-anchor="middle" fill="#52514e" font-size="12" font-weight="600">45%</text><text x="135" y="252" text-anchor="middle" fill="#8a8985" font-size="11">Value Creation</text><rect x="220" y="199.1" width="90" height="20.9" rx="5" fill="#eb6834"/><text x="265" y="191.1" text-anchor="middle" fill="#52514e" font-size="12" font-weight="600">22%</text><text x="265" y="252" text-anchor="middle" fill="#8a8985" font-size="11">The Method</text><rect x="350" y="172.5" width="90" height="47.5" rx="5" fill="#1baf7a"/><text x="395" y="164.5" text-anchor="middle" fill="#52514e" font-size="12" font-weight="600">50%</text><text x="395" y="252" text-anchor="middle" fill="#8a8985" font-size="11">The Platform Case</text><rect x="480" y="135.45" width="90" height="84.55" rx="5" fill="#eda100"/><text x="525" y="127.44999999999999" text-anchor="middle" fill="#52514e" font-size="12" font-weight="600">89%</text><text x="525" y="252" text-anchor="middle" fill="#8a8985" font-size="11">The Bridge</text><rect x="610" y="202.9" width="90" height="17.099999999999998" rx="5" fill="#8a8985"/><text x="655" y="194.9" text-anchor="middle" fill="#52514e" font-size="12" font-weight="600">18%</text><text x="655" y="252" text-anchor="middle" fill="#8a8985" font-size="11">Uncategorized</text></svg></div>
   </div>
 </div>
 
@@ -1095,115 +1089,25 @@ From persona to ICP</div></td></tr></tbody>
     </div></div>
     </div>
   </div>
-  <div class="ap" id="a-value-creation">
-    <p class="aud-note">Reach-weighted across 1 post with enough views for LinkedIn to disclose demographics in Value Creation.</p>
-    <div class="aud-grid">
-    <div class="aud-card"><h3>Seniority</h3><div class="aud-row">
-      <div class="aud-row-top"><span class="aud-row-label">Senior</span><span class="aud-row-pct">100%</span></div>
-      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:100%"></div></div>
-    </div></div>
-    <div class="aud-card"><h3>Company Size</h3><div class="aud-row">
-      <div class="aud-row-top"><span class="aud-row-label">2-10 employees</span><span class="aud-row-pct">100%</span></div>
-      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:100%"></div></div>
-    </div></div>
-    <div class="aud-card"><h3>Location</h3><div class="aud-row">
-      <div class="aud-row-top"><span class="aud-row-label">New York City Metropolitan Area</span><span class="aud-row-pct">100%</span></div>
-      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:100%"></div></div>
-    </div></div>
-    <div class="aud-card"><h3>Industry</h3><div class="aud-row">
-      <div class="aud-row-top"><span class="aud-row-label">Technology, Information and Internet</span><span class="aud-row-pct">100%</span></div>
-      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:100%"></div></div>
-    </div></div>
-    <div class="aud-card"><h3>Job Title</h3><div class="aud-row">
-      <div class="aud-row-top"><span class="aud-row-label">Founder</span><span class="aud-row-pct">100%</span></div>
-      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:100%"></div></div>
-    </div></div>
-    </div>
+<div class="dgr">
+    <div class="dgl" title="Financial Services">Financial Services</div>
+    <div class="dgb"><div class="dgf" style="width:22.0%;background:#2a78d6"></div></div>
+    <div class="dgv">5.0%</div>
   </div>
-  <div class="ap" id="a-the-method">
-    <p class="aud-note">Reach-weighted across 1 post with enough views for LinkedIn to disclose demographics in The Method.</p>
-    <div class="aud-grid">
-    <div class="aud-card"><h3>Seniority</h3><div class="aud-row">
-      <div class="aud-row-top"><span class="aud-row-label">Senior</span><span class="aud-row-pct">100%</span></div>
-      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:100%"></div></div>
-    </div></div>
-    <div class="aud-card"><h3>Company Size</h3><div class="aud-row">
-      <div class="aud-row-top"><span class="aud-row-label">2-10 employees</span><span class="aud-row-pct">100%</span></div>
-      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:100%"></div></div>
-    </div></div>
-    <div class="aud-card"><h3>Location</h3><div class="aud-row">
-      <div class="aud-row-top"><span class="aud-row-label">Bucharest Metropolitan Area</span><span class="aud-row-pct">100%</span></div>
-      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:100%"></div></div>
-    </div></div>
-    <div class="aud-card"><h3>Industry</h3><div class="aud-row">
-      <div class="aud-row-top"><span class="aud-row-label">Technology, Information and Internet</span><span class="aud-row-pct">100%</span></div>
-      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:100%"></div></div>
-    </div></div>
-    <div class="aud-card"><h3>Job Title</h3><div class="aud-row">
-      <div class="aud-row-top"><span class="aud-row-label">Co-Founder</span><span class="aud-row-pct">100%</span></div>
-      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:100%"></div></div>
-    </div></div>
-    </div>
+<div class="dgr">
+    <div class="dgl" title="IT Services and IT Consulting">IT Services and IT Consulting</div>
+    <div class="dgb"><div class="dgf" style="width:17.4%;background:#2a78d6"></div></div>
+    <div class="dgv">4.0%</div>
   </div>
-  <div class="ap" id="a-the-platform-case">
-    <p class="aud-note">Reach-weighted across 2 posts with enough views for LinkedIn to disclose demographics in The Platform Case.</p>
-    <div class="aud-grid">
-    <div class="aud-card"><h3>Seniority</h3><div class="aud-row">
-      <div class="aud-row-top"><span class="aud-row-label">Entry</span><span class="aud-row-pct">59%</span></div>
-      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:58.935361216730044%"></div></div>
-    </div>
-    <div class="aud-row">
-      <div class="aud-row-top"><span class="aud-row-label">Senior</span><span class="aud-row-pct">41%</span></div>
-      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:41.06463878326996%"></div></div>
-    </div></div>
-    <div class="aud-card"><h3>Company Size</h3><div class="aud-row">
-      <div class="aud-row-top"><span class="aud-row-label">51-200 employees</span><span class="aud-row-pct">59%</span></div>
-      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:58.935361216730044%"></div></div>
-    </div>
-    <div class="aud-row">
-      <div class="aud-row-top"><span class="aud-row-label">2-10 employees</span><span class="aud-row-pct">41%</span></div>
-      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:41.06463878326996%"></div></div>
-    </div></div>
-    <div class="aud-card"><h3>Location</h3><div class="aud-row">
-      <div class="aud-row-top"><span class="aud-row-label">London Area, United Kingdom</span><span class="aud-row-pct">100%</span></div>
-      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:100%"></div></div>
-    </div></div>
-    <div class="aud-card"><h3>Industry</h3><div class="aud-row">
-      <div class="aud-row-top"><span class="aud-row-label">IT Services and IT Consulting</span><span class="aud-row-pct">59%</span></div>
-      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:58.935361216730044%"></div></div>
-    </div>
-    <div class="aud-row">
-      <div class="aud-row-top"><span class="aud-row-label">Venture Capital and Private Equity Principals</span><span class="aud-row-pct">41%</span></div>
-      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:41.06463878326996%"></div></div>
-    </div></div>
-    <div class="aud-card"><h3>Job Title</h3><div class="aud-row">
-      <div class="aud-row-top"><span class="aud-row-label">Co-Founder</span><span class="aud-row-pct">59%</span></div>
-      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:58.935361216730044%"></div></div>
-    </div>
-    <div class="aud-row">
-      <div class="aud-row-top"><span class="aud-row-label">Founder</span><span class="aud-row-pct">41%</span></div>
-      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:41.06463878326996%"></div></div>
-    </div></div>
-    </div>
+<div class="dgr">
+    <div class="dgl" title="Business Consulting and Services">Business Consulting and Services</div>
+    <div class="dgb"><div class="dgf" style="width:15.5%;background:#2a78d6"></div></div>
+    <div class="dgv">3.5%</div>
   </div>
-  <div class="ap" id="a-the-bridge">
-    <p class="aud-note">Reach-weighted across 1 post with enough views for LinkedIn to disclose demographics in The Bridge.</p>
-    <div class="aud-grid">
-    <div class="aud-card"><h3>Seniority</h3><div class="aud-row">
-      <div class="aud-row-top"><span class="aud-row-label">Senior</span><span class="aud-row-pct">100%</span></div>
-      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:100%"></div></div>
-    </div></div>
-    <div class="aud-card"><h3>Company Size</h3><div class="aud-row">
-      <div class="aud-row-top"><span class="aud-row-label">2-10 employees</span><span class="aud-row-pct">100%</span></div>
-      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:100%"></div></div>
-    </div></div>
-    <div class="aud-card"><h3>Location</h3><div class="aud-empty">Not enough data</div></div>
-    <div class="aud-card"><h3>Industry</h3><div class="aud-row">
-      <div class="aud-row-top"><span class="aud-row-label">Venture Capital and Private Equity Principals</span><span class="aud-row-pct">100%</span></div>
-      <div class="aud-bar-bg"><div class="aud-bar-fill" style="width:100%"></div></div>
-    </div></div>
-    <div class="aud-card"><h3>Job Title</h3><div class="aud-empty">Not enough data</div></div>
-    </div>
+<div class="dgr">
+    <div class="dgl" title="Technology, Information and Internet">Technology, Information and Internet</div>
+    <div class="dgb"><div class="dgf" style="width:12.2%;background:#2a78d6"></div></div>
+    <div class="dgv">2.8%</div>
   </div>
   <div class="ap" id="a-uncategorized">
     <p class="aud-note">Reach-weighted across 0 posts with enough views for LinkedIn to disclose demographics in Uncategorized.</p>
@@ -1226,7 +1130,7 @@ From persona to ICP</div></td></tr></tbody>
 function sv(id,b){document.querySelectorAll('.vw').forEach(v=>v.classList.remove('act'));document.querySelectorAll('.tn button').forEach(x=>x.classList.remove('act'));document.getElementById('v-'+id).classList.add('act');b.classList.add('act')}
 function sm(k,b){document.querySelectorAll('.mp').forEach(d=>d.classList.remove('act'));document.querySelectorAll('.mtb button').forEach(x=>x.classList.remove('act'));document.getElementById('m-'+k).classList.add('act');b.classList.add('act')}
 function sl(id,b){document.querySelectorAll('.lp').forEach(p=>p.classList.remove('act'));document.querySelectorAll('.lt button').forEach(x=>x.classList.remove('act'));document.getElementById(id).classList.add('act');b.classList.add('act')}
-function sa(key,b){document.querySelectorAll('.ap').forEach(p=>p.classList.remove('act'));document.querySelectorAll('.aud-filters button').forEach(x=>x.classList.remove('act'));document.getElementById('a-'+key).classList.add('act');b.classList.add('act')}
+function sd(id,b){document.querySelectorAll('.dgp').forEach(p=>p.classList.remove('act'));document.querySelectorAll('.dgt button').forEach(x=>x.classList.remove('act'));document.getElementById(id).classList.add('act');b.classList.add('act')}
 function tc(id){var c=document.getElementById('c-'+id),i=document.getElementById('i-'+id);if(c){c.classList.toggle('op');if(i)i.textContent=c.classList.contains('op')?'\u2212':'+'}}
 
 </script>
